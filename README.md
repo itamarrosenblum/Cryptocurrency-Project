@@ -8,7 +8,7 @@
 * Vanilla CSS3
 
 ## Description 📝
-#### Responsive single pag application that provides real-time reports and information about cryptocurrencies.
+#### Responsive single page application that provides real-time reports and information about cryptocurrencies.
 - Users can view real-time prices of cryptocurrencies.
 - Users can save up to 5 cryptocurrencies to a report list.
 - Users can search for their favorite cryptocurrencies.
