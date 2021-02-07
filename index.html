@@ -1,0 +1,122 @@
+<!--
+* Purpose: Main HTML File
+* Author: Itamar Rosenblum
+* Date: 23-01-2021
+* Last modified: 06-02-2021
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Top cryptocurrency prices and charts. Free access to current and historic data for Bitcoin and thousands of altcoins.">
+    <meta name="keywords" content="HTML, CSS, JavaScript, programming, web development, full stack, front end, web design, design, code, cryptocurrency, project, altcoins">
+    <meta name="author" content="Itamar Rosenblum">
+    <title>Cryptocurrency Prices, Charts & More - CryptoMarket</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#6c63ff">
+    <link rel="shortcut icon" href="/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#6c63ff">
+    <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Media Queries -->
+    <link rel="stylesheet" href="css/queries.css">
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <!-- Main navigation -->
+        <nav>
+            <!-- Logo container -->
+            <div class="logo-container">
+                <a href="index.html"><img class="logo-black" src="img/logo-black.png" alt="cryptoMarket Logo"></a>
+            </div>
+
+            <!-- Main nav -->
+            <ul class="main-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#main" id="markets" class="markets main-link" >Markets</a></li>
+                <li><a href="#main" id="charts" class="charts main-link">Charts</a></li>
+                <li><a href="#main" id='about' class="main-link" >About</a></li>
+                <li><ion-icon name="search-outline"></ion-icon><input type="search" id="search-input" placeholder="Search" autocomplete="off"></li>
+            </ul>
+            <!-- Hamburger icon -->
+            <a class="mobile-nav-icon"><ion-icon name="reorder-three" class="hamburger-icon"></ion-icon></a>
+        </nav>
+
+        <div class="header-info">
+            <!-- Header content -->
+            <div class="hero-content">
+                <h1>All cryptocurrency data in one location, accessible anywhere.</h1>
+                
+                <p>cryptoMarket is a platform which provides fast, <br> reliable and unified data about cryptocurrency market.</p>
+
+                <a href="#main" class="btn btn-full" id="learn-more">Learn More</a>
+                <a href="#main" class="btn btn-ghost markets">Get Started For Free</a>
+            </div>
+        </div>
+    </header>
+
+    <main id="main" class="container-main">
+       <!-- Filled from JS -->
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <!-- Footer navigation -->
+        <div class="footer-navigation">
+            <!-- Footer logo navigation -->
+            <div class="container-logo">
+                <img src="img/logo-white.png" alt="cryptoMarket Logo" class="logo-white">
+            </div>
+
+            <!-- Foor nav one -->
+            <div>
+                <ul class="footer-nav">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+    
+            <!-- Foor nav two -->
+            <div>
+                <ul class="footer-nav">
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Privacy</a></li>
+                </ul>
+            </div>
+
+            <!-- Foor nav three -->
+            <div>
+                <ul class="footer-nav">
+                    <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                </ul>
+            </div>
+        </div>
+       
+        <!-- Copyright container -->
+        <div><p>Copyright 2020 &copy; Itamar Rosenblum</p></div>
+    </footer>
+
+    <!-- Ionicons CDN -->
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+
+    <!-- Highcharts CDN -->
+    <script src="https://code.highcharts.com/highcharts.src.js"></script>
+
+    <!-- Main JS File -->
+    <script src="js/script.js"></script>
+</body>
+</html>
