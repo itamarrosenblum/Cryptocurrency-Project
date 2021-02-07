@@ -670,7 +670,7 @@
                                 `<div class="card-coin">
                                     <div class="card-header">
                                         <button class="btn-favorite">
-                                            <ion-icon name="heart" id="${data[i].symbol}"class='fav-star'></ion-icon>
+                                            <ion-icon name="heart" id="${data[i].symbol}"class='fav-star checked-star'></ion-icon>
                                         </button>
                                         <h3 id="card-title" class="card-title">
                                             ${data[i].name} <span>(${data[i].symbol})</span>
