@@ -13,7 +13,7 @@
 - Users can save up to 5 cryptocurrencies to a report list.
 - Users can search for their favorite cryptocurrencies.
 - Users can manage (add/remove) their favorite cryptocurrencies (report list).
-- Users actions are saved in the localStorage.
+- User's actions are saved in the localStorage.
 - The website pages are created dynamically.
 
 ## 3RD PARTY API INTEGRATION
