@@ -8,7 +8,7 @@
 // Function 0: Create the home page
 (async function homePage() {
     // Get element
-    const learnMoreBtn = document.querySelector('#learn-more');
+    const homePageLink = document.querySelector('.home-page');
     const mainContainer = document.querySelector('main');
 
     // Creates the page after load
@@ -16,7 +16,7 @@
     const data = await res.text();
     mainContainer.innerHTML = data;
     
-    learnMoreBtn.addEventListener('click', async (e) => {
+    homePageLink.addEventListener('click', async (e) => {
         // Create the page after user clicks on the 'Learn More' button
         const res = await fetch('pages/home.html');
         const data = await res.text();
@@ -400,16 +400,16 @@
 
     // Set the charts page function
     chartsPageLink.addEventListener('click', async e => { 
-        // Fetch charts page
-        const res = await fetch('pages/charts.html')
-        const data = await res.text();
-        mainContainer.innerHTML = data;
-
         // Get element
         const reportList = JSON.parse(localStorage.getItem('listReport')); 
-        const spinner = document.querySelector('.spinner');
-  
+        const spinner = document.querySelector('.spinner')
+
         if (reportList != null) {
+            // Fetch charts page
+            const res = await fetch('pages/charts.html')
+            const data = await res.text();
+            mainContainer.innerHTML = data;
+  
             // Display sipnner - displayed to 'none' in line 397
             spinner.style.display = 'flex';
 
@@ -589,7 +589,6 @@
             // Alert to the user if the reportList is empty
             const res = await fetch('pages/alertMessage.html');
             const data = await res.text();
-            mainContainer.innerHTML = "";
             mainContainer.innerHTML = data;
         }
     }); // End of the mainContainer addEventLisitner
