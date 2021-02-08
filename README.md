@@ -16,14 +16,14 @@
 - User's actions are saved in the localStorage.
 - The website pages are created dynamically.
 
-## 3RD PARTY API INTEGRATION
+## 3rd Party API Integration
 #### Integrated 3rd party APIs for live pricing, coins information, images and fonts.
 
 - <a href="https://www.coingecko.com/en/api#/">coinGecko</a>
 - <a href="https://min-api.cryptocompare.com/">CryptoCompare</a>
 - <a href="https://fonts.google.com/">Google Fonts</a>
 
-## 3RD PARTY CDN INTEGRATION
+## 3rd Party CDN Integration
 #### Integrated 3rd party CDNs for icons and interactive chart
 
 - <a href="https://www.highcharts.com/">Highcharts</a>
