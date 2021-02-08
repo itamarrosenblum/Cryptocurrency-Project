@@ -1,4 +1,4 @@
-# cryptoMarket - Web Application (Front End Project)
+# cryptoMarket - Single Page Web Application (Front End Project)
 
 <img src="https://i.imgur.com/ZUS7lvt.png" alt="Cryptocurrency project">
 
