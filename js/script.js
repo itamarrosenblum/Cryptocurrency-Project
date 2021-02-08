@@ -8,20 +8,23 @@
 // Function 0: Create the home page
 (async function homePage() {
     // Get element
-    const homePageLink = document.querySelector('.home-page');
+    const homePageLink = document.querySelectorAll('.home-page');
     const mainContainer = document.querySelector('main');
 
-    // Creates the page after load
+    // Fetch home page after load
     const res = await fetch('pages/home.html');
     const data = await res.text();
     mainContainer.innerHTML = data;
     
-    homePageLink.addEventListener('click', async (e) => {
-        // Create the page after user clicks on the 'Learn More' button
-        const res = await fetch('pages/home.html');
-        const data = await res.text();
-        mainContainer.innerHTML = data;
-    });
+    // Add addEventListener to all anchor tags with class 'home-page'
+    for (let i = 0; i < homePageLink.length; i++) {
+        homePageLink[i].addEventListener('click', async e => {
+            // Fetch home page when user clicks 'Home' or 'Learn more'
+            const res = await fetch('pages/home.html');
+            const data = await res.text();
+            mainContainer.innerHTML = data;
+        });
+    }
 })();
 
 // Function 1: Create the markets page
@@ -34,7 +37,7 @@
     const searchInput = document.querySelector('#search-input');
 
     // Create the markets page and the cards for coins
-    header.addEventListener('click', async (e) => {
+    header.addEventListener('click', async e => {
         if (e.target.classList.contains('markets')) {
             // Fetch markets page
             const res = await fetch('pages/markets.html');
