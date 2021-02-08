@@ -694,6 +694,7 @@
             // Fetch alert message page
             const res = await fetch('pages/alertMessage.html');
             const data = await res.text();
+            mainContainer.innerHTML = "";
             mainContainer.innerHTML = data;
 
             const alertHeader = document.querySelector('h2');
