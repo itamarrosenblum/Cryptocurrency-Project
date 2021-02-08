@@ -2,7 +2,7 @@
 
 <img src="https://i.imgur.com/ZUS7lvt.png" alt="Cryptocurrency project">
 
-## Environment 🛠️
+## Technologies used 🛠️
 * Vanilla JavaScript
 * HTML5
 * Vanilla CSS3
