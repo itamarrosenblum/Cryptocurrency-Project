@@ -589,6 +589,7 @@
             // Alert to the user if the reportList is empty
             const res = await fetch('pages/alertMessage.html');
             const data = await res.text();
+            mainContainer.innerHTML = "";
             mainContainer.innerHTML = data;
         }
     }); // End of the mainContainer addEventLisitner
@@ -691,7 +692,6 @@
             }
         // Alert to the user if the coin doesn't exist
         } else if (searchInput.value !== '') {
-            mainContainer.innerHTML = "";
             // Fetch alert message page
             const res = await fetch('pages/alertMessage.html');
             const data = await res.text();
