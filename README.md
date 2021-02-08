@@ -26,7 +26,7 @@
 ## 3RD PARTY CDN INTEGRATION
 #### Integrated 3rd party CDNs for icons and interactive chart
 
-- <a href="https://www.highcharts.com/">Highestchart</a>
+- <a href="https://www.highcharts.com/">Highcharts</a>
 - <a href="https://ionicons.com/">Ionicons</a>
 
 ## Live Preview 🔗
