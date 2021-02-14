@@ -157,6 +157,9 @@
 
     .display-main-nav { width: 80%; }
 
+    section h2,
+    section div h2 { font-size: 156%; }
+
     .productive-info div {
         width: 350px; 
         margin-right: 5%;
