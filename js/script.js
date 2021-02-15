@@ -405,7 +405,6 @@
     chartsPageLink.addEventListener('click', async e => { 
         // Get element
         const reportList = JSON.parse(localStorage.getItem('listReport')); 
-        const spinner = document.querySelector('.spinner')
 
         if (reportList != null) {
             // Fetch charts page
@@ -413,6 +412,8 @@
             const data = await res.text();
             mainContainer.innerHTML = data;
   
+            // Get element
+            const spinner = document.querySelector('.spinner')
             // Display sipnner - displayed to 'none' in line 397
             spinner.style.display = 'flex';
 
